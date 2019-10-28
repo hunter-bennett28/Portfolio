@@ -1,0 +1,562 @@
+header, nav, main, section, aside, footer,figure{
+    display: block;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.current{
+    color: #eabe6b;
+}
+
+nav{
+    background-color: #000;
+    margin: 0;
+    height: 100px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    overflow:hidden;
+}
+
+nav img{
+    position: fixed;
+    width: 80px;
+    top: 10px;
+    left: 5%;
+}
+
+nav ul{
+    list-style: none;
+    padding: 40px 0 0 80px;
+    margin: 0;
+}
+
+nav li{
+    display: inline;
+    padding-left: 12%; 
+}
+
+nav li:first-child{
+    padding-left: 10%;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    font: 130% 'Montserrat', sans-serif;  
+}
+
+nav a:hover, .current:hover{
+    color: #bbb;
+}
+
+h1{
+    position: absolute;
+    top: 90px;
+    font-family: 'Merriweather', serif;
+    color:#fff;
+    font-size: 55px;
+    text-align: center;
+    text-shadow: 2px 3px #333;
+    background-color:rgba(0, 0, 0, 0.67);
+    padding: 1% 0;
+    width: 100%;
+}
+
+header h2{
+    position: relative;
+    bottom: 65px;
+    float: right;
+    padding-right: 2%;
+    color: #fff;
+    font-size: 45px;
+    text-align: right;
+    text-shadow: 2px 3px 2px #333;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header img{
+    position: relative;
+    top: 100px;
+    z-index: -1;
+    width: 100%;
+}
+
+#navBuffer{
+    height: 100px;
+    position: relative;
+    top: 96px;
+    background-color: #000;
+}
+
+.wrap{
+    background-color: #222;
+}
+
+main{
+    margin: 95px 0 0 0;
+    font: 22px/1.7 'Montserrat', sans-serif;
+    overflow: auto;
+}
+
+footer{
+    background-color: #000;
+    text-align: center;
+    clear: both;
+    font: 110% 'Montserrat', sans-serif;
+    padding: 1%;
+    color: #fff;
+}
+
+p{
+    color:#fff;
+}
+
+footer a{
+    color: #eabe6b;
+}
+
+h2{
+   font-family: 'Merriweather', serif; 
+}
+
+main a{
+    color: #eabe6b;
+}
+
+/*About Section*/
+
+#aboutMain h2{
+    text-align: center;
+    font-size: 72px; 
+    margin: 0;
+    padding: 1% 10%;
+    color: #eabe6b;
+    background-image: linear-gradient(#000, #333);
+}
+
+#aboutMain h3, #moreMain h3{
+    font: 40px 'Merriweather', serif;
+    padding: 1% 1% 1% 0;
+    text-shadow: 1px 1px 2px #333;
+    margin-top: 0;
+    border-bottom: 1px solid #fff;
+    color: #fff;
+}
+
+#aboutMain section{
+    overflow: auto;
+    background-color: #333;
+    padding: 2% 10%;
+    max-width: 100%;
+}
+
+#aboutMain #firmament{
+    background-color: #222;
+}
+
+#firmContent{
+    width: 70%;
+    margin-right: 2%;
+    float: left;
+}
+
+#firmContent img{
+    float: left;
+    width: 35%;
+    margin-right: 2%;
+}
+
+#aboutMain aside{
+    float: right;
+    background-color: #555;
+    padding: 1% 1% 2% 1%;
+    font-size: 24px;
+    font-style: italic;
+    width: 25%;
+}
+
+#aboutMain aside h3{
+    color: #eabe6b;
+    font-size: 30px;
+}
+
+#aboutMain img{
+    border: 1px solid #fff;
+}
+
+#aboutMain #iceWall img{
+    width: 30%;
+    float: right;
+    margin-left: 2%;
+}
+
+/*Resources Section*/
+
+#resourcesMain{
+    width: 80%;
+    margin: 0 auto;
+}
+
+#resourcesMain h2, #merchMain h2{
+    color: #fff;
+    font-size: 46px;
+    border-bottom: 1px solid #fff;
+    margin: 2%;
+}
+
+#resourcesMain #books, #podcasts .resource{
+    background-image: linear-gradient(to bottom right, #333, #444);
+    margin: 2%;
+    padding: 4%;
+    overflow: auto;
+}
+
+#books img{
+    width: 20%;
+    float: left;
+    margin: 0 2% 2% 0;
+}
+
+#books .resource{
+    overflow: auto;
+    margin-top: 2%;
+    color: #fff;
+    background-color: #222;
+    padding: 2% 2% 0 2%;;
+}
+
+#books a{
+    font-size: 36px;
+    text-decoration: none;
+}
+
+#books h3{
+    margin-left: 22%;
+    padding-top: 2%;
+    border-top: 1px solid #fff;
+}
+
+#podcasts .resource{
+    width: 38%; 
+    float: left;
+    margin-bottom: 4%
+}
+
+#podcasts img{
+    display: block;
+    margin-bottom: 4%;
+    border: 1px solid #fff;
+    width: 60%;
+}
+
+#podcasts a{
+    text-decoration: none;
+    font-size: 28px;
+}
+
+#podcasts p{
+    border-top: 1px solid #fff;
+    padding-top: 4%;
+}
+
+/*Merch Section*/
+
+#merchMain{
+    width: 80%;
+    margin: 2% auto 0;
+    padding-bottom: 8%;
+}
+
+#merchMain section{
+    width: 22%;
+    float: left;
+    padding-right: 2.5%;
+}
+
+#merchMain img{
+    width: 100%;
+    border: 1px solid #000;
+    
+}
+
+#merchMain a{
+    display: block;
+    text-decoration: none;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    bottom: 80px;
+    color: #000;
+    background-color: rgba(173, 173, 173, 0.7);
+    font-weight: bold;
+    border: 1px solid #000;
+}
+
+#merchContainer{
+    background-image: linear-gradient(to bottom right, #333, #444);
+    overflow: auto;
+    width: 88%;
+    margin: 0 0 6% 2%;
+    padding: 3% 2% 0 6%;
+}
+
+/*More Section*/
+
+#moreMain section{
+    padding: 2% 10%;
+    color: #fff;
+    overflow: auto;
+}
+
+#moreMain p{
+    margin: 0;
+}
+
+#vaccines, #birds{
+    background-color: #333;
+}
+
+#moreMain img{
+    width: 30%;
+    border: 1px solid #fff;
+}
+
+#moreMain h3{
+    padding-top: 0;
+}
+
+#vaccImg, #birdImg{
+    float: right;
+    margin-left: 2%;
+}
+
+#repImg{
+    float: left;
+    margin-right: 2%;
+}
+
+@media screen and (max-width:960px){
+    nav li{
+        padding-left: 14%;
+    }
+    
+    nav a{
+        font-size: 16px;
+    }
+    
+    #conspiracies{
+        display: none;
+    }
+    
+    h1{
+        font-size: 36px;
+    }
+    
+    #aboutMain h2{
+        font-size: 60px;
+    }
+    
+    header h2{
+        font-size: 30px;
+        bottom: 10px;
+    }  
+    
+    aside{
+        display: none;
+    }
+    
+    footer{
+        font-size: 16px;
+    }   
+    
+    #firmContent{
+        width: 100%;
+    }
+    
+    #aboutMain #iceWall img{
+        width: 40%;
+    }
+    
+    #aboutMain p, #moreMain p, #resourcesMain p{
+        font-size: 16px;
+    }
+    
+    #resourcesMain h2, #merchMain h2{
+         font-size: 36px;
+    }
+    
+    #bookHeader{
+        padding-top: 65px;
+    }
+    
+    #resourcesMain a{
+         font-size: 24px;;
+    }
+    
+    #resourcesMain h3{
+         font-size: 20px;
+    }
+    
+    #merchMain{
+        padding-bottom: 0;
+    }
+    
+    #merchContainer{
+        padding-top: 9%;
+    }
+    
+    #merchHeader{
+        padding-top: 65px;
+    }
+    
+    #merchMain section{
+        width: 46%;
+    }
+    
+    #merchMain a{
+        bottom: 60px;
+    }
+    
+    #moreMain img{
+        width: 40%;
+    }
+   
+}
+
+@media screen and (max-width:650px){
+    nav li{
+        padding-left: 12%;
+    }
+    
+    nav a{
+          font-size: 14px;
+    }
+    
+    h1{
+        font-size: 30px;
+    }
+    
+    header h2{
+        font-size: 26px;
+        bottom: 0;
+    }
+    
+    #bookHeader{
+        padding-top: 85px;
+    }
+    
+    #merchHeader{
+        padding-top: 85px;
+    }
+    
+    #merchContainer{
+        padding-top: 10%;
+    }
+    
+    #podcasts .resource{
+        width: 88%;
+        float: none;
+    }
+    
+    #books img{
+        display: none;
+    }
+    
+    #resourcesMain h3{
+        margin-left: 0;
+        font-size: 16px;
+    } 
+}
+
+@media screen and (max-width: 480px){
+    header{
+        display: none;
+    }
+    
+    nav{
+        position: static;
+        height: auto;
+    }
+    
+    nav img{
+        display: none;
+    }
+    
+    nav ul{
+        padding: 0;
+    }
+    
+    nav li, nav li:first-child{
+        display: block;
+        text-align: center;
+        padding: 2%;
+        border-bottom: 1px solid #555;
+    }
+
+    nav a{
+        font-size: 20px;
+    }
+    
+    #navBuffer{
+        display: none;
+    }
+    
+    main{
+        margin: 0;
+    }
+    
+    #aboutMain h2{
+        font-size: 40px;
+        padding: 8% 4% 0;
+    }
+    
+    #aboutMain h3, #moreMain h3{
+        font-size: 28px
+    }
+    
+    #aboutSubtitle{
+        display: none;
+    }
+    #aboutMain section, #moreMain section{
+        padding: 2% 4%
+    }
+    
+    #aboutMain #iceWall img, #aboutMain #firmament img{
+        width: 50%;
+    }
+    
+    #resourcesMain{
+        width: 95%;
+    }
+    
+    #bookHeader{
+        padding: 0;
+    }
+    
+    #podcasts img{
+        display: none;
+    }
+
+    #merchMain section{
+        width: 95%;
+        padding-top: 4%
+    }
+    
+    #merchHeader{
+        padding: 0;
+    }
+    
+    #merchMain{
+        margin-top: 0;
+        width: 95%;
+    }
+    
+    #moreMain img{
+        display: none;
+    }
+}

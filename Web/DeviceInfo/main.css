@@ -1,0 +1,115 @@
+body{
+    background-image: linear-gradient(to bottom right, #dda134, #983535);
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 5% 0;
+}
+
+#wrap{
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    border: 2px solid rgb(188, 28, 28);
+    overflow: auto;
+    padding: 2%;
+}
+
+h1{
+    font-size: 36px;
+    text-align: center;
+    background-color: #983535;
+    color: white;
+    border-bottom: 1px solid black;
+    padding: 8%;
+    margin: 0 0 8% 0;
+    text-shadow: 2px 2px 2px #333;
+}
+
+section{
+    display: block;
+    float: left;
+    border: 1px solid black;
+    width: 30.7%; 
+    margin-right: 2%;
+    overflow: auto;
+}
+
+section:last-child{
+    margin-right: 0;
+}
+
+section .options{
+    height: 340px;
+    padding: 2%;
+}
+
+section .input{
+    width: 60%;
+    float: right;
+}
+
+section input, select{
+    margin-bottom: 20px;
+    width: 97%;
+    float: left;
+}
+
+select{
+    width: 100%;
+}
+
+p{
+    margin: 0 0 4px 0;
+}
+
+section .p{
+    width: 35%;
+    float: left;
+    text-align: right;
+    margin: auto:
+}
+
+.buttons{
+    padding: 2%;
+    overflow: auto;
+    border-top: 1px solid black;
+}
+
+.previous, .next, .new, .update{
+    background-color: #dda134;
+    border: 2px solid black;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 1px 1px 2px #666;
+}
+
+.cycle{
+    float: left; 
+    width: 45%;
+}
+
+.alter{
+    float: right;
+    width: 45%;
+}
+
+.next, .update{
+    margin-bottom: 0;
+}
+
+input[type="button"]:hover{
+    color: #fff;
+    box-shadow: none;
+    transform: translateY(2px);
+}
+
+@media screen and (max-width: 1320px){
+    section .p{
+        width: 50%;
+    }
+    
+    section .input{
+        width: 48%;
+    }
+}

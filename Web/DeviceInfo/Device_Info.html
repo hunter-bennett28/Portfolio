@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hunter's Device Controller</title>
+        <meta charset="utf-8">
+        <script src="script.js"></script>
+        <link href="main.css" rel="stylesheet" media="screen">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+    </head>
+    <body>
+        <div id="wrap">
+            <section id="video">
+                <h1>Video Device</h1>
+                <div class="options" id="vdOptions">
+                    <div class="p">
+                        <p>Replacement Cost:</p>
+                        <br>
+                        <p>Supplier Name:</p>
+                        <br>
+                        <p>Serial Number:</p>
+                        <br>
+                        <p>Enabled:</p>
+                        <br>
+                        <p>Resolution:</p>
+                        <br>
+                        <p>Type:</p>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="vdReplacementCost">
+                        <input type="text" id="vdSupplierName">
+                        <input type="text" id="vdSerialNumber">                
+                        <input type="checkbox" id="vdStatus">                 
+                        <input type="text" id="vdResolution">
+                        <select id="vdType">
+                            <option value="LCD">LCD</option>
+                            <option value="LED">LED</option>
+                            <option value="Plasma">Plasma</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="cycle">
+                        <input type="button" class="previous" id="vdPrev" 
+                               value="Previous" 
+                               onclick="previous(this);">
+                        <input type="button" class="next" id="vdNext" value="Next" 
+                               onclick="next(this);">
+                    </div>
+                    <div class="alter">
+                        <input type="button" class="new" id="vdNew" value="New" 
+                               onclick="createNew(this);">
+                        <input type="button" class="update" id="vdUpdate" 
+                               value="Update" onclick="update(this);">
+                    </div>
+                </div>
+            </section>
+        
+            <section id="hardDisk">
+                <h1>Hard Disk</h1>
+                <div class="options" id="hdOptions">
+                    <div class="p">
+                        <p>Replacement Cost:</p>
+                        <br>
+                        <p>Supplier Name:</p>
+                        <br>
+                        <p>Serial Number:</p>
+                        <br>
+                        <p>Enabled:</p>
+                        <br>
+                        <p>Size:</p>
+                        <br>
+                        <p>Transfer Rate:</p>
+                        <br>
+                        <p>Platter Size:</p>
+                        <br>
+                        <p># of Platters:</p>
+                        <br>
+                    </div>
+                    <div class="input">                 
+                        <input type="text" id="hdReplacementCost">                   
+                        <input type="text" id="hdSupplierName">                   
+                        <input type="text" id="hdSerialNumber">           
+                        <input type="checkbox" id="hdStatus">         
+                        <input type="text" id="hdSize">             
+                        <input type="text" id="hdTransferRate">            
+                        <input type="text" id="hdPlatterSize">            
+                        <input type="text" id="hdNumberOfPlatters">
+                    </div>
+                </div>
+                <div class="buttons">
+                    <div class="cycle">
+                        <input type="button" class="previous" value="Previous" 
+                               id="hdPrev" onclick="previous(this);">
+                        <input type="button" class="next" id="hdNext" value="Next" 
+                               onclick="next(this);">
+                    </div>
+                    <div class="alter">
+                        <input type="button" class="new" id="hdNew" value="New" 
+                               onclick="createNew(this);">
+                        <input type="button" class="update" id="hdUpdate" 
+                               value="Update" onclick="update(this);">
+                    </div>
+                </div>
+            </section>
+            
+            <section id="ssd">
+                <h1>SSD</h1>
+                <div class="options" id="ssdOptions">
+                    <div class="p">
+                        <p>Replacement Cost:</p>
+                        <br>
+                        <p>Supplier Name:</p>
+                        <br>
+                        <p>Serial Number:</p>
+                        <br>
+                        <p>Enabled:</p>
+                        <br>
+                        <p>Size:</p>
+                        <br>
+                        <p>Transfer Rate:</p>
+                        <br>
+                        <p>Type:</p>
+                        <br>
+                        <p>Wear Leveling:</p>
+                        <br>
+                    </div>
+                    <div class="input">
+                        <input type="text" id="ssdReplacementCost">
+                        <input type="text" id="ssdSupplierName">
+                        <input type="text" id="ssdSerialNumber">
+                        <input type="checkbox" id="ssdStatus">
+                        <input type="text" id="ssdSize">
+                        <input type="text" id="ssdTransferRate">
+                        <select id="ssdType">
+                            <option value="Flash">Flash</option>
+                            <option value="DRAM">DRAM</option>
+                        </select>
+                        <select id="ssdWearLeveling">
+                            <option value="Yes">Yes</option>
+                            <option value="No">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="buttons">
+                     <div class="cycle">
+                        <input type="button" class="previous" id="ssdPrev" 
+                               value="Previous" 
+                               onclick="previous(this);">
+                        <input type="button" class="next" id="ssdNext" value="Next" 
+                               onclick="next(this);">
+                    </div>
+                    <div class="alter">
+                        <input type="button" class="new" id="ssdNew" value="New" 
+                               onclick="createNew(this);">
+                        <input type="button" class="update" id="ssdUpdate" 
+                               value="Update" onclick="update(this);">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>

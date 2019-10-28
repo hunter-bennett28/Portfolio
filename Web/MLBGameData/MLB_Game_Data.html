@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hunter's MLB Game Data Retriever</title>
+        <link href="main.css" rel="stylesheet">
+        <script src="script.js"></script>
+    </head>
+    
+    <body onload="start();">
+    <div id=wrap>
+        <div id="title">
+            <p>Hunter's MLB Game Data Retriever</p>
+        </div>
+        <div id="date">
+            <div id="dateInput">
+                <p>Year<select id="year"></select></p><br>
+                <p>Month<select id="month"></select></p><br>
+                <p>Day<select id="day"></select></p><br>
+            </div>
+        
+        </div>
+        <div id="retrieveBox">
+            <input type="button" id="retrieve" value="Retrieve" onclick="getURL();" 
+            keypress="getURL();">
+        </div>
+        
+        <div id="data">
+            <p>Home Team Name<input type="text" id="homeTeam" maxlength="100" 
+            width="100" onkeypress="filterText(this);"></p><br>
+            <p>Away Team Name<input type="text" id="awayTeam" maxlength="100" 
+            width="100" onkeypress="filterText(this);"></p><br>
+            <p>Winning Pitcher<input type="text" id="winningPitcher" maxlength="100" 
+            width="100" onkeypress="filterText(this);"></p><br>
+            <p>Losing Pitcher<input type="text" id="losingPitcher" maxlength="100" 
+                                    width="100" onkeypress="filterText(this);"></p><br>
+            <p>Venue<input type="text" id="venue" maxlength="100" width="100" 
+            onkeypress="filterText(this);"></p>
+        </div><br>
+        
+        <div id="btnsBottom">
+            <input type="button" id="previousGame" value="Previous Game" 
+            onclick="retrievePrevious();">
+            <input type="button" id="nextGame" value="Next Game" 
+            onclick="retrieveNext();">
+            <input type="button" id="saveChanges" value="Save Changes">
+        </div>
+    </div>
+    </body>
+</html>
