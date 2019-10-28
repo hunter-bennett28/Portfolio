@@ -8,16 +8,16 @@ a result, other compilers may give errors.
 This is a command line program and thus fileusage.exe will only function when run 
 from the command line.
 
-###Description:
+### Description:
 A program that queries a hard drive from the current or provided directory and
 returns information about the files contained, including number of files with 
 certain extensions and size.
 
-###Note:
+### Note:
 type fileusage.exe -h for usage
 
-###Example Usages:
-fileusage.exe ñc+rs c:\MEGA\
-fileusage.exe ñrx ì\.(c|cpp)î
+### Example Usages:
+fileusage.exe ‚Äìc+rs c:\MEGA\
+fileusage.exe ‚Äìrx ‚Äú\.(c|cpp)‚Äù
 
 
