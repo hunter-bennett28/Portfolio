@@ -1,7 +1,7 @@
-#Satirical Flat Earth Website
+# Satirical Flat Earth Website
 
-###Description:
+### Description:
 A multipage website designed with satirical content. 
 
-###Disclaimer:
+### Disclaimer:
 The views expressed in this project are not my own. The content is designed with purely comedic intent and is not malicious in nature.
